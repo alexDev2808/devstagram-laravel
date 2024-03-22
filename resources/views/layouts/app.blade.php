@@ -34,7 +34,7 @@
             @yield('contenido')
         </main>
 
-        <footer class="text-center p-5 font-bold text-gray-500">
+        <footer class="text-center p-5 font-bold text-gray-500 mt-10">
             Devstagram - Todos los derechos reservados {{ now()->year }}
         </footer>
 
