@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/crear-cuenta', [RegisterController::class,'index']); // mostrar vista
+Route::get('/register', [RegisterController::class,'index'])->name('register'); // mostrar vista
+Route::post('/register', [RegisterController::class,'store']);

@@ -19,7 +19,7 @@
                     </a>
                     <a 
                         class="font-bold text-gray-600 text-sm" 
-                        href="/crear-cuenta">Crear cuenta
+                        href="{{ route('register') }}">Crear cuenta
                     </a>
                 </nav>
             </div>
