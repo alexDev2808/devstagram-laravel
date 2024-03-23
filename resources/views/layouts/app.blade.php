@@ -29,7 +29,7 @@
 
                         <a 
                             class="font-bold text-gray-600 text-sm" 
-                            href="#">
+                            href="{{ route('posts.index', auth()->user()->username ) }}">
                             Hola, <span>{{ auth()->user()->name }}</span>
                         </a>
 
