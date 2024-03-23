@@ -15,7 +15,7 @@
                 <nav class="flex gap-2 items-center">
                     <a 
                         class="font-bold text-gray-600 text-sm" 
-                        href="#">Login
+                        href="{{ route('login') }}">Login
                     </a>
                     <a 
                         class="font-bold text-gray-600 text-sm" 
