@@ -14,5 +14,5 @@ const dropzone = new Dropzone("#dropzone", {
 
 
 dropzone.on('success', (file, response) => {
-    console.log(response);
+    document.querySelector('[name="imagen"]').value = response.imagen;
 })
