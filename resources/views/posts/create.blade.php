@@ -85,7 +85,10 @@
                 <div class="mb-5">
                     <input
                         name="imagen"
-                        type="hidden">
+                        type="hidden"
+                        value="{{ old('imagen') }}"
+                        >
+
 
                     @error('imagen')
                         <p 
