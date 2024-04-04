@@ -15,4 +15,9 @@ class Post extends Model
         'imagen',
         'user_id'
     ];
+
+    // Relacion con User
+    public function user(){
+        return $this->belongsTo(User::class)->select(['name', 'username']);
+    }
 }
