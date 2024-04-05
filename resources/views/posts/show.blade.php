@@ -7,7 +7,7 @@
 
 @section('contenido')
 
-    <div class="container mx-auto flex">
+    <div class="container mx-auto md:flex">
         <div class="md:w-1/2">
             <img  
                 src="{{ asset('uploads' . '/' . $post->imagen ) }}"
@@ -32,7 +32,8 @@
             <div class="shadow bg-white p-5 mb-5 ">
                 <p class="text-xl font-bold text-center mb-4">Agrega un nuevo comentario</p>
 
-                <form>
+                <form method="POST" action="{{ route('comentarios.store', ['post' => $post, 'user' => $user ]) }}">
+                    @csrf
                     <div class="mb-5">
                         <label 
                             for="comentario"
