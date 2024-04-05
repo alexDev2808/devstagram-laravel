@@ -26,6 +26,9 @@
         </div>
 
         <div class="md:w-1/2 p-5">
+
+            @auth
+                
             <div class="shadow bg-white p-5 mb-5 ">
                 <p class="text-xl font-bold text-center mb-4">Agrega un nuevo comentario</p>
 
@@ -63,6 +66,8 @@
                     >
                 </form>
             </div>
+
+            @endauth
         </div>
     </div>
 
