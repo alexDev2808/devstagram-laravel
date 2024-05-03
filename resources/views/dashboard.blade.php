@@ -8,7 +8,11 @@ Perfil: {{ $user->username }}
 <div class="flex justify-center">
     <div class="w-full md:w-8/12 lg:w-6/12 flex flex-col items-center md:flex-row">
         <div class="w-8/12 lg:w-6/12 px-5">
-            <img src="{{ asset('img/usuario.svg') }}" alt="Imagen usuario">
+            <img 
+                src="{{ $user->imagen ? asset('perfiles') . '/' . $user->imagen : asset('img/usuario.svg') }}" 
+                alt="Imagen usuario"
+                class="rounded-full"
+                >
         </div>
         <div class="md:w-8/12 lg:w-6/12 px-5 flex flex-col items-center md:justify-center md:items-start py-10">
             
