@@ -14,4 +14,11 @@ class FollowerController extends Controller
 
         return back();
     }
+
+    public function destroy(User $user, Request $request) {
+
+        $user->followers()->detach( auth()->user()->id );
+
+        return back();
+    }
 }
