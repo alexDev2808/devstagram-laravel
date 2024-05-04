@@ -33,13 +33,13 @@ Perfil: {{ $user->username }}
             </div>
 
             <p class="text-gray-800 text-sm mb-3 font-bold">
-                0
-                <span class="font-normal mt-5"> seguidores</span>
+                {{ $user->followers->count() }}
+                <span class="font-normal mt-5"> @choice('seguidor|seguidores', $user->followers->count() ) </span>
             </p>
 
             <p class="text-gray-800 text-sm mb-3 font-bold">
-                0
-                <span class="font-normal"> siguiendo</span>
+                 {{ $user->following->count() }}
+                <span class="font-normal mt-5"> Seguidos </span>
             </p>
 
             <p class="text-gray-800 text-sm mb-3 font-bold">
