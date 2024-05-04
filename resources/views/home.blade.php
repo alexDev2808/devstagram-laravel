@@ -24,7 +24,11 @@
         </div>
 
     @else
-        <p>No hay posts</p>
+        <p
+            class="text-gray-600 uppercase text-sm text-center font-bold"
+        >
+            No hay posts, sigue a alguien para ver sus publicaciones.
+        </p>
     @endif
 
 @endsection
