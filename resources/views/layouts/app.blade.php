@@ -66,7 +66,7 @@
             </div>
         </header>
 
-        <main class="container mx-auto mt-10">
+        <main class="container mx-auto mt-10 px-10">
 
             <h2 class="font-black text-center text-3xl mb-10">
                 @yield('titulo')
